@@ -16,63 +16,62 @@ require_once './includes/header.php'
             </ul>
             <!-- Login, Sign-up -->
             <form class="d-flex">
-                <a type="button" href="#" class="btn btn-outline-warning me-2">Login</a>
-                <a type="button" href="./sign_up.php" class="btn btn-warning">Sign-up</a>
+                <a type="button" href="./login.php" class="btn btn-outline-warning me-2">Login</a>
+                <a type="button" href="./signup.php" class="btn btn-warning">Sign-up</a>
             </form>
         </div>
     </div>
 </nav>
-
-<p>&nbsp</p>
-
+<br>
 <!-- Form  -->
 <form class="row g-3">
     <h1 class="mb-1 text-center">Sign up to <span class="buy">Buy</span><span class="shop">Shop</span></h1>
+    <br><br>
     <!-- Input - ID -->
     <div class="col-md-4">
         <label for="" class="form-label">ID</label>
-        <input type="text" class="form-control" id="id">
+        <input type="text" class="form-control" id="id" placeholder="Your ID">
+        <small id="idHelp" class="form-text text=muted">This will be your login ID</small>
     </div>
     <!-- Input - Name -->
     <div class="col-md-4">
         <label for="" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name">
+        <input type="text" class="form-control" id="name" placeholder="Your name">
     </div>
     <!-- Input - Email -->
     <div class="col-md-4">
         <label for="" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
     </div>
     <!-- Input - Password -->
     <div class="col-md-6">
         <label for="" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password">
+        <input type="password" class="form-control" id="password" placeholder="Password">
     </div>
     <!-- Input - Password -->
     <div class="col-md-6">
-        <label for="" class="form-label">Retype Password</label>
-        <input type="password" class="form-control" id="retype_password">
+        <label for="" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm password">
     </div>
     <!-- Input - Phone  -->
     <div class="col-md-6">
-        <label for="" class="form-label">Contact Number</label>
-        <input type="tel" class="form-control" id="phone">
-        <small id="phoneHelp" class="form-text text=muted">We will never share your phone number with anyone else</small>
+        <label for="" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
     </div>
     <!-- Input - Location  -->
     <div class="col-md-4">
-        <label for="" class="form-label">Location</label>
-        <select id="location" class="form-select">
-            <option value="" disabled selected required>Select Your Location</option>
+        <label for="" class="form-label">Region</label>
+        <select id="region" class="form-select">
+            <option value="" disabled selected required>Select your region</option>
             <option value="North">North</option>
             <option value="Center">Center</option>
             <option value="South">South</option>
         </select>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
     <!-- Sign Up  -->
-    <button type="submit" class="btn btn-outline-warning me-2 btn-block">Sign Up</button>
-    <p class="text-gray-soft text-center small mb-2">Already have an account? <a href="./sign_in.php">Sign in</a></p>
+    <button type="submit" class="btn btn-outline-warning me-2 btn-block">Create Your Account</button>
+    <p class="text-gray-soft text-center small mb-2">Already have an account? <a href="./login.php">Login</a></p>
 </form>
 
 

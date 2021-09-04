@@ -16,15 +16,14 @@ require_once './includes/header.php'
       </ul>
       <!-- Login, Sign-up -->
       <form class="d-flex">
-        <a type="button" href="#" class="btn btn-outline-warning me-2">Login</a>
-        <a type="button" href="./sign_up.php" class="btn btn-warning">Sign-up</a>
+        <a type="button" href="./login.php" class="btn btn-outline-warning me-2">Login</a>
+        <a type="button" href="./signup.php" class="btn btn-warning">Sign-up</a>
       </form>
     </div>
   </div>
 </nav>
 
-<p>&nbsp</p>
-
+<br>
 <!-- Welcome -->
 <section class="pt-4 pt-md-11">
   <div class="container">
@@ -48,11 +47,9 @@ require_once './includes/header.php'
   </div>
 </section>
 
-&nbsp
-
+<br>
 <!-- Images -->
 <section class="container-fluid pb-5 px-0">
-  <!-- On large screen we have 3 columns of imgs, On medium and small screen we have 2 colums of imgs-->
   <div class="row p-0">
     <!-- First Row - -->
     <div class="col-lg-4 col-sm-6 p-0">
