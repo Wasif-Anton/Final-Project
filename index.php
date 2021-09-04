@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php
 $titel = 'Home Page';
-require_once 'includes/header.php'
+require_once './includes/header.php'
 ?>
 
 <!-- Nav Bar -->
@@ -16,12 +16,14 @@ require_once 'includes/header.php'
       </ul>
       <!-- Login, Sign-up -->
       <form class="d-flex">
-        <button type="button" class="btn btn-outline-warning me-2">Login</button>
-        <button type="button" class="btn btn-warning">Sign-up</button>
+        <a type="button" href="#" class="btn btn-outline-warning me-2">Login</a>
+        <a type="button" href="./sign_up.php" class="btn btn-warning">Sign-up</a>
       </form>
     </div>
   </div>
 </nav>
+
+<p>&nbsp</p>
 
 <!-- Welcome -->
 <section class="pt-4 pt-md-11">
@@ -77,5 +79,5 @@ require_once 'includes/header.php'
 
 <!-- Footer -->
 <?php
-require_once 'includes/footer.php'
+require_once './includes/footer.php'
 ?>
