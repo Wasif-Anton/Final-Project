@@ -8,10 +8,14 @@
   <!-- Link to css Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Home Page</title>
 </head>
 
 <body>
+  <!-- Header - Dynamic Title -->
+  <?php
+  $titel = 'Home Page';
+  require_once 'includes/header.php'
+  ?>
 
   <!-- Nav Bar -->
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -37,8 +41,8 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-5 col-lg-6 order-md-2">
-          <!-- Image -->
-          <img src="img/main_page/img1.jpeg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <!-- Right Image -->
+          <img src="img/main_page/img1.jpeg" class="rounded img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
         </div>
         <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
           <!-- Heading -->
@@ -58,33 +62,36 @@
   &nbsp
 
   <!-- Images -->
-  <!-- Right Image -->
-  <img src="img/main_page/img3.jpeg" class="img-fluid">
-
-  <section class="container-fluid pb-5 px-2">
+  <section class="container-fluid pb-5 px-0">
+    <!-- On large screen we have 3 columns of imgs, On medium and small screen we have 2 colums of imgs-->
     <div class="row p-0">
-      <!-- First row - -->
+      <!-- First Row - -->
       <div class="col-lg-4 col-sm-6 p-0">
-        <img class="img-fluid" src="img/main_page/img6.jpeg" class="img-thumbnail">
+        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-thumbnail">
       </div>
       <div class="col-lg-4 col-sm-6 p-0">
-        <img class="img-fluid" src="img/main_page/img5.jpeg" class="img-thumbnail">
-      </div>
-    </div>
-
-    <div class="row p-0">
-      <!-- Second row - -->
-      <div class="col-lg-4 col-sm-6 p-0">
-        <img class="img-fluid" src="img/main_page/img4.jpeg" class="img-thumbnail">
+        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-thumbnail">
       </div>
       <div class="col-lg-4 col-sm-6 p-0">
-        <img class="img-fluid" src="img/main_page/img2.jpeg" class="img-thumbnail">
+        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-thumbnail">
+      </div>
+      <!-- Second Row - -->
+      <div class="col-lg-4 col-sm-6 p-0">
+        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-thumbnail">
+      </div>
+      <div class="col-lg-4 col-sm-6 p-0">
+        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail">
+      </div>
+      <div class="col-lg-4 col-sm-6 p-0">
+        <img class="rounded img-fluid" src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="img-thumbnail">
       </div>
     </div>
   </section>
 
-
-
+  <!-- Footer -->
+  <?php
+  require_once 'includes/footer.php'
+  ?>
 
   <!-- Link to js Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
