@@ -1,4 +1,4 @@
-<!-- Header - Dynamic Title -->
+<!-- Header -->
 <?php
 $titel = 'Home Page';
 require_once 'includes/header.php'
