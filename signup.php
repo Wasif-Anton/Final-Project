@@ -1,6 +1,6 @@
 <!-- Header -->
 <?php
-$titel = 'Sign-up';
+$titel = 'Sign up';
 require_once './includes/header.php'
 ?>
 
@@ -16,7 +16,7 @@ require_once './includes/header.php'
             </ul>
             <!-- Login, Sign-up -->
             <form class="d-flex">
-                <a type="button" href="./login.php" class="btn btn-outline-warning me-2">Login</a>
+                <a type="button" href="./login.php" class="btn btn-outline-warning me-2">Log-in</a>
                 <a type="button" href="./signup.php" class="btn btn-warning">Sign-up</a>
             </form>
         </div>
