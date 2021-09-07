@@ -7,7 +7,6 @@
         <span class="buy">Buy</span><span class="shop">Shop</span>, Inc
     </p>
 </footer>
-
 </div>
 
 <!-- Link to js Bootstrap -->

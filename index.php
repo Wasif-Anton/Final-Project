@@ -22,7 +22,6 @@ require_once './includes/header.php'
     </div>
   </div>
 </nav>
-
 <br>
 <!-- Welcome -->
 <section class="pt-4 pt-md-11">
@@ -46,7 +45,6 @@ require_once './includes/header.php'
     </div>
   </div>
 </section>
-
 <br>
 <!-- Images -->
 <section class="container-fluid pb-5 px-0">
@@ -73,7 +71,6 @@ require_once './includes/header.php'
     </div>
   </div>
 </section>
-
 
 <!-- Footer -->
 <?php
