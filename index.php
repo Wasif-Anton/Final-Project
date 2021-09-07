@@ -35,12 +35,12 @@ require_once './includes/header.php'
       <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
         <!-- Heading -->
         <h1 class="display-3 text-center text-md-start">
-          Welcome to <span class="buy">Buy</span><span class="shop">Shop</span>.<br>
-          <span class="buy">Buy</span> anything.
+          Welcome to <span class="buy">Buy</span><span class="shop">Shop</span><br>
+          <span class="buy">Buy</span> anything
         </h1>
         <!-- Text -->
         <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-          <span class="buy">Buy</span> it with love.
+          <span class="buy">Buy</span> it with love
         </p>
       </div>
     </div>
@@ -73,6 +73,7 @@ require_once './includes/header.php'
     </div>
   </div>
 </section>
+
 
 <!-- Footer -->
 <?php
