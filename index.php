@@ -40,7 +40,7 @@ require_once './includes/header.php'
         </h1>
         <!-- Text -->
         <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-          <span class="buy">Buy</span> it with Love.
+          <span class="buy">Buy</span> it with love.
         </p>
       </div>
     </div>
