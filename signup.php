@@ -55,6 +55,8 @@ require_once './includes/header.php'
                 <div class="col-mb-3">
                     <label for="password" class="form-label"><strong>Password</strong></label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    <span id="passwordHelpInline" class="form-text">
+                        Must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                 </div>
                 <br>
                 <!-- Password -->
