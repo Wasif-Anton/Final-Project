@@ -26,15 +26,16 @@ require_once './includes/header.php'
 <br>
 <h1 class="mb-1 text-center">Login to <span class="buy">Buy</span><span class="shop">Shop</span></h1>
 <br><br>
+
 <!-- Form  -->
 <section class="container-fluid">
     <section class="row justify-content-center">
-        <section class="col-12 col-sm-6 col-md-4">
+        <section class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4">
             <form class="login-form-container">
-                <!-- ID  -->
+                <!-- ID -->
                 <div class="mb-3">
                     <label for="id" class="form-label"><strong>Identity</strong></label>
-                    <input type="id" class="form-control" id="id" placeholder="Your Identity" required>
+                    <input type="id" class="form-control" id="id" placeholder="Your identity" required>
                 </div>
                 <br>
                 <!-- Password  -->
@@ -50,7 +51,6 @@ require_once './includes/header.php'
         </section>
     </section>
 </section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- Footer -->
 <?php
