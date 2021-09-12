@@ -22,33 +22,42 @@ require_once './includes/header.php'
         </div>
     </div>
 </nav>
+
 <br>
-<h1 class="text-center text-success">You Have Been Registered!</h1>
-<br>
+<h1 class="text-center">You Have Been Registered to <span class="buy">Buy</span><span class="shop">Shop</span></h1>
+<br><br>
+
 <!-- Information Card -->
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">
-            <?php echo $_POST['name']; ?>
-        </h5>
-        <h6 class="card-subtitle mb-2 text-muted">
-            <strong>From the: </strong><?php echo $_POST['region']; ?>
-        </h6>
-        <p class="card-text">
-            <strong>Your ID: </strong><?php echo $_POST['id']; ?>
-        </p>
-        <p class="card-text">
-            <strong>Your phone number: </strong><?php echo $_POST['phone']; ?>
-        </p>
-        <p class="card-text">
-            <strong>Your email: </strong><?php echo $_POST['email']; ?>
-        </p>
-        <p class="card-text">
-            <strong>Your password: </strong><?php echo $_POST['password']; ?>
-        </p>
-        <a href="./login.php" class="btn btn-primary">Log-in</a>
-    </div>
-</div>
+<section class="container-fluid">
+    <section class="row justify-content-center">
+        <section class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <?php echo $_POST['name']; ?>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <strong>Region: </strong><?php echo $_POST['region']; ?>
+                    </h6>
+                    <p class="card-text">
+                        <strong>ID: </strong><?php echo $_POST['id']; ?>
+                    </p>
+                    <p class="card-text">
+                        <strong>Phone number: </strong><?php echo $_POST['phone']; ?>
+                    </p>
+                    <p class="card-text">
+                        <strong>Email: </strong><?php echo $_POST['email']; ?>
+                    </p>
+                    <p class="card-text">
+                        <strong>Password: </strong><?php echo $_POST['password']; ?>
+                    </p>
+                    <a href="./login.php" class="btn btn-primary">Log-in</a>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
 
 <!-- Footer -->
 <?php
