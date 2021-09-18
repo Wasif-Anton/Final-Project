@@ -1,7 +1,6 @@
 <?php
 
 // Creating a connection to our database
-
 $server_name  = 'localhost';
 $db_username = "root";
 $db_password = '';
