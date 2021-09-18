@@ -27,54 +27,54 @@ require_once './includes/header.php'
 <h1 class="mb-1 text-center">Sign up to <span class="buy">Buy</span><span class="shop">Shop</span></h1>
 <br><br>
 
-<!-- Form  -->
 <section class="container-fluid">
     <section class="row justify-content-center">
         <section class="col-10 col-sm-10 col-md-8 col-lg-6 col-xl-6">
-            <form class="signup-form-container" method="post" action="success.php">
+            <!-- Form  -->
+            <form class="signup-form-container" method="POST" action="includes/signup.inc.php">
                 <!-- ID -->
                 <div class="col-mb-3">
                     <label for="id" class="form-label"><strong>Identity</strong></label>
-                    <input type="text" class="form-control" id="id" name="id" placeholder="Your Identity" required>
+                    <input type="text" class="form-control" id="id" name="id" placeholder="Your Identity">
                     <small id="idHelp" class="form-text text=muted"><strong>This will be your login ID</strong></small>
                 </div>
                 <br>
                 <!-- Name -->
                 <div class="col-mb-3">
                     <label for="name" class="form-label"><strong>Name</strong></label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
                 </div>
                 <br>
                 <!-- Email -->
                 <div class="col-mb-3">
                     <label for="email" class="form-label"><strong>Email</strong></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                 </div>
                 <br>
                 <!-- Password -->
                 <div class="col-mb-3">
                     <label for="password" class="form-label"><strong>Password</strong></label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                     <span id="passwordHelpInline" class="form-text">
                         Must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                 </div>
                 <br>
-                <!-- Password -->
+                <!-- confirm_password -->
                 <div class="col-mb-3">
                     <label for="confirm_password" class="form-label"><strong>Confirm Password</strong></label>
-                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password">
                 </div>
                 <br>
                 <!-- Phone  -->
                 <div class="col-mb-3">
                     <label for="phone" class="form-label"><strong>Phone Number</strong></label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number" required>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number">
                 </div>
                 <br>
                 <!-- Region  -->
                 <div class="col-mb-3">
                     <label for="region" class="form-label"><strong>Region</strong></label>
-                    <select id="region" class="form-select" name="region" required>
+                    <select id="region" class="form-select" name="region">
                         <option value="" disabled selected required>Select your region</option>
                         <option value="North">North</option>
                         <option value="Center">Center</option>
@@ -84,7 +84,7 @@ require_once './includes/header.php'
                 <br><br><br><br><br>
                 <!-- Sign Up  -->
                 <div class="text-center">
-                    <button type="submit" class="btn btn-outline-warning me-2 btn-block"><strong>Create Your Account</strong></button>
+                    <button type="submit" name="submit" class="btn btn-outline-warning me-2 btn-block"><strong>Create Your Account</strong></button>
                     <p class="text-gray-soft small mb-2"><strong>Already have an account? </strong><a href="./login.php">Login</a></p>
                 </div>
             </form>

@@ -27,11 +27,11 @@ require_once './includes/header.php'
 <h1 class="mb-1 text-center">Login to <span class="buy">Buy</span><span class="shop">Shop</span></h1>
 <br><br>
 
-<!-- Form  -->
 <section class="container-fluid">
     <section class="row justify-content-center">
         <section class="col-8 col-sm-8 col-md-6 col-lg-4 col-xl-4">
-            <form class="login-form-container">
+            <!-- Form  -->
+            <form class="login-form-container" action="./includes/login.inc.php">
                 <!-- ID -->
                 <div class="mb-3">
                     <label for="id" class="form-label"><strong>Identity</strong></label>
@@ -40,7 +40,7 @@ require_once './includes/header.php'
                 <br>
                 <!-- Password  -->
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+                    <label for="password" class="form-label"><strong>Password</strong></label>
                     <input type="password" class="form-control" id="password" placeholder="Your password" required>
                 </div>
                 <br>
