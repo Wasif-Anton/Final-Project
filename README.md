@@ -56,10 +56,6 @@
 
 
 ## How to use the website:
-1. Open your **web browser** and type in the **URL** http://localhost:8080
-<img width="130" alt="Screen Shot 2021-03-01 at 13 41 58" src="https://user-images.githubusercontent.com/26307376/109492647-f7235080-7a93-11eb-8e2d-a9b2a671f612.png">
-
-2. Click on **project/**
-<img width="513" alt="Screen Shot 2021-03-01 at 13 42 43" src="https://user-images.githubusercontent.com/26307376/109492779-25089500-7a94-11eb-963b-27e22f9fd242.png">
+Open your **web browser** and type in the **URL** http://localhost/final-project/
 
 * Now you are good to go
