@@ -1,6 +1,9 @@
 <?php
 
-// emptyInputSignup function check if fields are empty
+require_once 'database.inc.php';
+
+// Signup Functions
+// emptyInputSignup function check if the signup fields are empty
 function emptyInputSignup($id, $name, $email, $password, $confirm_password, $phone)
 {
     $result = null;
@@ -90,20 +93,20 @@ function invalidPhone($phone)
     return $result;
 }
 
-// idExists function check if the user exists
-function idExists($conn, $id)
+// uidExists function check if the user exists
+function uidExists($conn, $id)
 {
     // Selecting the data, id
     $sql = "SELECT * FROM tbluser WHERE userId = ?;";
     $stmt = mysqli_stmt_init($conn);
-    // If connection fails
+    // If there is an error
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../signup.php?error=stmtfaild");
         exit();
     }
-    // If did not fails
-    // s -> it means one strings, the id
-    mysqli_stmt_bind_param($stmt, "s", $id);
+    // If did not fails, passing data from the user
+    // i -> it means one int, the id
+    mysqli_stmt_bind_param($stmt, "i", $id);
     mysqli_stmt_execute($stmt);
     // Grabbing the data
     $resultData = mysqli_stmt_get_result($stmt);
@@ -133,9 +136,61 @@ function createUser($conn, $id, $name, $email, $password, $phone, $region)
     // Hashing Password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
     // If not fail
-    mysqli_stmt_bind_param($stmt, "ssssss", $id, $name, $email, $hashedPassword, $phone, $region);
+    mysqli_stmt_bind_param($stmt, "isssss", $id, $name, $email, $hashedPassword, $phone, $region);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../login.php?error=none");
     exit();
+}
+
+// Login Functions
+//emptyInputLogin function check if the login fields are empty
+function emptyInputLogin($id, $password)
+{
+    $result = null;
+    // If fields are empty
+    if (empty($id) || empty($password)) {
+        $result = true; // There is a mistake
+    }
+    // Else fields are not empty
+    else {
+        $result = false; // Everything is good
+    }
+    return $result;
+}
+
+//-------------------------------------------------------------
+//loginUser function
+function loginUser($conn, $id, $password)
+{
+    // Admin Login
+    if ($id === "admin") {
+        if ($password === "1") {
+            header("location: ../admin/adminHome.php");
+            exit();
+        }
+    }
+    // User Login
+    //Grabbing data from the database (ID)
+    $uidExists = uidExisits($conn, $id); // Passing ID
+    // Wrong login
+    if ($uidExists === false) {
+        header("location: ../login.php?error=wronglogin");
+        exit();
+    }
+    // Checking password
+    $pwdHashed = $uidExists["password"]; // Grabbing password and save in into pwdHashed
+    $checkPwd = password_verify($password, $pwdHashed); // Check if the password is right
+    // If password is wrong
+    if ($checkPwd === false) {
+        header("location: ../login.php?error=wronglogin");
+        exit();
+    }
+    // If password is right
+    else if ($checkPwd === true) {
+        session_start();
+        $_SESSION["id"] = $uidExists["id"];
+        header("location: ../user/userHome.php");
+        exit();
+    }
 }

@@ -41,7 +41,7 @@ if (isset($_POST["submit"])) {
 
     // passwordMatch function check if the password are the same or not
     if (passwordMatch($password, $confirm_password) !== false) {
-        header("location: ../signup.php?error=passworddontmatch");
+        header("location: ../signup.php?error=passwordnotmatch");
         exit();
     }
 
@@ -51,8 +51,8 @@ if (isset($_POST["submit"])) {
         exit();
     }
 
-    // idExists function check if the user id exists
-    if (idExists($conn, $id) !== false) {
+    // uidExists function check if the user id exists
+    if (uidExists($conn, $id) !== false) {
         header("location: ../signup.php?error=usernametaken");
         exit();
     }

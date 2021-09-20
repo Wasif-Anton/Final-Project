@@ -35,13 +35,13 @@ require_once './includes/header.php'
                 <!-- ID -->
                 <div class="mb-3">
                     <label for="id" class="form-label"><strong>Identity</strong></label>
-                    <input type="id" class="form-control" id="id" placeholder="Your identity" required>
+                    <input type="id" class="form-control" id="id" placeholder="Your identity">
                 </div>
                 <br>
                 <!-- Password  -->
                 <div class="mb-3">
                     <label for="password" class="form-label"><strong>Password</strong></label>
-                    <input type="password" class="form-control" id="password" placeholder="Your password" required>
+                    <input type="password" class="form-control" id="password" placeholder="Your password">
                 </div>
                 <br>
                 <div class="text-center">
@@ -51,6 +51,24 @@ require_once './includes/header.php'
         </section>
     </section>
 </section>
+
+<!-- Error Messages -->
+<div>
+    <?php
+    // Error check, if there is an error what it the error
+    if (isset($_GET["error"])) {
+        // Empty input
+        if ($_GET["error"] == "emptyinput") {
+            echo "<p>Fill in all fields!</p>";
+        }
+        // ID - Invalid ID
+        else if ($_GET["error"] == "wronglogin") {
+            echo "<p>Incorrect login information!</p>";
+        }
+    }
+    ?>
+</div>
+
 
 <!-- Footer -->
 <?php

@@ -92,6 +92,51 @@ require_once './includes/header.php'
     </section>
 </section>
 
+<!-- Error Messages -->
+<div>
+    <?php
+    // Error check, if there is an error what it the error
+    if (isset($_GET["error"])) {
+        // Empty input
+        if ($_GET["error"] == "emptyinput") {
+            echo "<p>Fill in all fields!</p>";
+        }
+        // ID, invalid ID
+        else if ($_GET["error"] == "invalidid") {
+            echo "<p>Your ID is Invalid</p>";
+        }
+        // Name, invalid name
+        else if ($_GET["error"] == "invalidname") {
+            echo "<p>Your Name is Invalid</p>";
+        }
+        // Email, invalid email
+        else if ($_GET["error"] == "invalidemail") {
+            echo "<p>Your Email is Invalid</p>";
+        }
+        // Password
+        else if ($_GET["error"] == "passwordnotmatch") {
+            echo "<p>Your Password is not matched</p>";
+        }
+        // Phone
+        else if ($_GET["error"] == "invalidphone") {
+            echo "<p>Your Phone is in use</p>";
+        }
+        // User exists
+        else if ($_GET["error"] == "usernametaken") {
+            echo "<p>Your ID is in use</p>";
+        }
+        // Stmt failed
+        else if ($_GET["error"] == "stmtfaild") {
+            echo "<p>Something went wrong, try again!</p>";
+        }
+        // No Errors
+        else if ($_GET["error"] == "none") {
+            echo "<p>You Have Sign Up!</p>";
+        }
+    }
+    ?>
+</div>
+
 <!-- Footer -->
 <?php
 require_once './includes/footer.php'
