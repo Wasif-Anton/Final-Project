@@ -56,6 +56,12 @@
 
 
 ## How to use the website:
+
+(On my Windows PC)
 Open your **web browser** and type in the **URL** http://localhost/final-project/
 
+Or 
+
+(On my Mac)
+Open your **web browser** and type in the **URL** http://localhost:8080/final-project/
 * Now you are good to go
