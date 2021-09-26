@@ -1,4 +1,7 @@
-# Guide How to Setup the Project
+#This is my academic project (final project) for Practical Software Engineering.
+I stopped working on this project I am working on a new one
+
+Guide How to Setup the Project
 
 ## In my case I am using: 
 * **Laptop:** MacBook Pro (Retina, 13-inch, Early 2015)
