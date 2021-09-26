@@ -1,5 +1,4 @@
-#This is my academic project (final project) for Practical Software Engineering.
-I stopped working on this project I am working on a new one
+## This is my academic project (final project) for Practical Software Engineering. I stopped working on this project I am working on a new one ##
 
 Guide How to Setup the Project
 
